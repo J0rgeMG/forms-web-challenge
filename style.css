@@ -1,0 +1,53 @@
+body{
+    background-color: azure;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    text-align: center;
+}
+
+form{
+    background-color: white;
+    width: 30rem;
+    margin: 3rem auto;
+    padding: 1rem;
+    box-shadow: 2px 2px 6px rgba(100, 100, 100, 0.2);
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+input, textarea, select{
+    display: block;
+    width: 100%;
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+    border: 1px solid rgb(184, 184, 184);
+    border-radius: 2px;
+    padding: 0.25rem;
+    color: rgb(61, 61, 61);
+    box-sizing: border-box;
+    font: inherit;
+}
+
+input:focus, textarea:focus, select:focus{
+    background-color: rgba(130, 130, 206, 0.5);
+}
+
+textarea{
+    resize: none;
+}
+
+.form-control-inline{
+    display: flex;
+    align-items: center;
+}
+
+.form-control-inline input{
+    width: auto;
+    margin-right: 0.5rem;
+}

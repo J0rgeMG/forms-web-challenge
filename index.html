@@ -23,74 +23,78 @@
     </header>
 
     <main>
-      <h2>How can we help you?</h2>
-
-      <section id="contact-info-form">
-        <ul>
-          <li>
-            <label for="user-name">Your Name</label>
-            <input type="text" name="username" id="user-name" required />
-          </li>
-          <li>
-            <label for="user-email">Your E-Mail Address</label>
-            <input type="email" name="useremail" id="user-email" required />
-          </li>
-          <li>
-            <label for="user-phone">Your Phone Number</label>
-            <input
-              type="number"
-              name="userphone"
-              id="user-phone"
-              minlength="9"
-              maxlength="20"
-              required
-            />
-          </li>
-        </ul>
-      </section>
-
-      <section id="message-form">
-        <label for="user-msg">Your Message</label>
-        <textarea name="usermsg" id="user-msg" rows="6"></textarea>
-      </section>
-
-      <section id="drop-form">
-        <label for="drop-list">How did you find us?</label>
-        <select name="droplist" id="drop-list">
-          <option value="search">Web Search</option>
-          <option value="mouth">Word of Mouth</option>
-          <option value="other">Other</option>
-        </select>
-      </section>
-
-      <section id="contact-preferences-form">
-        <h2>How should we reply?</h2>
-
-        <ul>
-          <li class="form-control-inline">
-            <input type="radio" name="contact" id="contact-phone" required />
-            <label for="contact-phone">Call me</label>
-          </li>
-          <li class="form-control-inline">
-            <input type="radio" name="contact" id="contact-email" required />
-            <label for="contact-email">Send me an email</label>
-          </li>
-          <li class="form-control-inline">
-            <input type="radio" name="contact" id="contact-no" required />
-            <label for="contact-no">Don't reply</label>
-          </li>
-        </ul>
-      </section>
-
-      <section id="tos-form">
-        <input type="checkbox" name="tos" id="tos" required />
-        <label for="tos">Accept Terms</label>
-      </section>
-
-      <section id="buttons">
-        <button type="reset" id="clear-btn">Clear</button>
-        <button type="submit" id="submit-btn">Submit</button>
-      </section>
+        <form action="/" method="get">
+            <h2>How can we help you?</h2>
+      
+            <section id="contact-info-form">
+              <ul>
+                <li>
+                  <label for="user-name">Your Name</label>
+                  <input type="text" name="username" id="user-name" required />
+                </li>
+                <li>
+                  <label for="user-email">Your E-Mail Address</label>
+                  <input type="email" name="useremail" id="user-email" required />
+                </li>
+                <li>
+                  <label for="user-phone">Your Phone Number</label>
+                  <input
+                    type="number"
+                    name="userphone"
+                    id="user-phone"
+                    minlength="9"
+                    maxlength="20"
+                    required
+                  />
+                </li>
+              </ul>
+            </section>
+      
+            <section id="message-form">
+              <label for="user-msg">Your Message</label>
+              <textarea name="usermsg" id="user-msg" rows="6"></textarea>
+            </section>
+      
+            <section id="drop-form">
+              <label for="drop-list">How did you find us?</label>
+              <select name="droplist" id="drop-list">
+                <option value="search">Web Search</option>
+                <option value="mouth">Word of Mouth</option>
+                <option value="other">Other</option>
+              </select>
+            </section>
+      
+            <section id="contact-preferences-form">
+              <h2>How should we reply?</h2>
+      
+              <ul>
+                <li class="form-control-inline">
+                  <input type="radio" name="contact" id="contact-phone" required />
+                  <label for="contact-phone">Call me</label>
+                </li>
+                <li class="form-control-inline">
+                  <input type="radio" name="contact" id="contact-email" required />
+                  <label for="contact-email">Send me an email</label>
+                </li>
+                <li class="form-control-inline">
+                  <input type="radio" name="contact" id="contact-no" required />
+                  <label for="contact-no">Don't reply</label>
+                </li>
+              </ul>
+            </section>
+            
+            <hr>
+      
+            <section id="tos-form" class="form-control-inline">
+              <input type="checkbox" name="tos" id="tos" required />
+              <label for="tos">Accept Terms</label>
+            </section>
+      
+            <section id="buttons">
+              <button type="reset" id="clear-btn">Clear</button>
+              <button type="submit" id="submit-btn">Submit</button>
+            </section>
+        </form>
     </main>
   </body>
 </html>
