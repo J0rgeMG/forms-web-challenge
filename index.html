@@ -55,15 +55,32 @@
         </section>
 
         <section id="contact-preferences-form">
+            <h2>How should we reply?</h2>
 
+            <ul>
+                <li class="form-control-inline">
+                    <input type="radio" name="contact" id="contact-phone" required>
+                    <label for="contact-phone">Call me</label>
+                </li>
+                <li class="form-control-inline">
+                    <input type="radio" name="contact" id="contact-email" required>
+                    <label for="contact-email">Send me an email</label>
+                </li>
+                <li class="form-control-inline">
+                    <input type="radio" name="contact" id="contact-no" required>
+                    <label for="contact-no">Don't reply</label>
+                </li>
+            </ul>
         </section>
 
         <section id="tos-form">
-
+            <input type="checkbox" name="tos" id="tos" required>
+            <label for="tos">Accept Terms</label>
         </section>
 
         <section id="buttons">
-            
+            <button type="reset" id="clear-btn">Clear</button>
+            <button type="submit" id="submit-btn">Submit</button>
         </section>
     </main>
 </body>
